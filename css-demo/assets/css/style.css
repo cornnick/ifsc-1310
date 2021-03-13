@@ -1,0 +1,216 @@
+/* ------- CSS Demo Stylesheet ------- */
+
+/* ---------------Box Sizing----------------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*-------------Responsive Images ------------*/
+img{max-width: 100%;
+height:auto;}
+
+
+/*-------------Utility Classes ------------*/
+.container{
+  width: 80vw;
+  margin: 40px auto;
+}
+
+/* ---------------Global Styles----------------- */
+
+body {
+    margin:0;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+header.primary{
+    background-color: #3b648b;
+    text-align: center;
+    color:#ffffff;
+    text-shadow: 2px 2px  #000000;
+    /* Long Form* */
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40 px;
+    /*Top, right, bottom, left*/
+    padding: 40px 40px 20px 40px;
+    /*Top/Bottom, Right, Left */
+    20px 40 px;
+}
+
+header.primary h1{
+  font-size: 3.2rem;
+  margin:20px 0;
+}
+
+header.primary h1 a{
+  color:ffffff;
+  text-decoration: none;
+}
+
+header.primary h2{
+  font-size: 2rem;
+  /* Top | Left/Right | Bottom */
+  margin: 20px auto 40px; 
+}
+
+header.primary nav {
+  width: 80vw;
+  margin: 20px auto;
+  max-width: 900px;
+  /*in order to see what the blocks look like:
+  background:red; */
+}
+
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  padding: 0;
+}
+
+header.primary nav ul li{
+  list-style-type: none;
+}
+
+header.primary nav a:link, header.primary nav a:visited{
+  color:white;
+  text-decoration: none;
+  background-color: black;
+  background-color: rgba(0,0,0,.4);
+  padding: 8px 16px;
+  border-radius: 20px 10px;
+  transition: 1s;
+  
+}
+  
+header.primary nav a:hover, header.primary nav a:active{
+  background-color: rgba(0,0,0,.8);
+}
+
+#intro{
+  border-bottom: 1px dotted #c0c0c0;
+  padding-bottom: 1.5vw;
+}
+
+#intro h2{
+  color:#3b638b;
+}
+
+#intro p{
+  line-height:1.5;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  /* Shorthand */
+  flex-flow: row space-between;
+  border-bottom: 1px dotted #c0c0c0;
+  padding-bottom:2.6rem;
+}
+
+#content article.post{
+  width:30%;
+  box-shadow:0 4px 8px rgba(0,0,0,.4);
+  padding:.7em;
+  border-radius:10px;
+  font-size:.9rem;
+  transition:.5s;
+}
+
+#content article.post:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,.4);
+}
+
+
+#content .post figure{
+  margin:0;
+}
+
+#content article time, #content article figcaption, #content article footer{
+  font-size: .8rem;
+  text-transform:uppercase;
+  color:#c0c0c0;
+}
+
+#content article img{
+  border-radius: 4px;
+}
+
+#content article a:link, #content article a:visited{
+  color:#3b638b;
+}
+
+#content article a:hover,#content article a:active{
+  text-decoration:none;
+}
+
+/*-------------Attribute Selectors-------------*/
+
+aside[role="complementary"]{
+background-color: #172635;
+  color:fff;
+  padding:2.2rem;
+  
+}
+  
+aside .container{
+  display: flex;
+  flex-flow: row space-between;
+}
+  
+aside article.widget{
+    width: 40%;
+  }
+  
+aside a:link, aside a:visited{
+color:white;
+display:block;
+margin-top:20px;
+}
+
+aside footer{
+  display:none;
+}
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+/*CSS Media Query Example*/
+
+@media screen and (max-width:690px){
+  header.primary nav ul{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  margin: 0, auto;
+}
+
+header.primary nav a{
+  display:block;
+}
+
+header.primary nav li{
+  margin-bottom:20px;
+}
