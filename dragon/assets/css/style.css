@@ -1,10 +1,4 @@
-/* Color Theme  
- #53616B 
- #1B2C38 
- #181C1F - Base
- #33536B
- #8EA6B8
-*/
+
 
 /* ---------------Box Sizing----------------- */
 
@@ -57,7 +51,7 @@ img {
 /* ----- Global Styles ---- */
 
 body{
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', Arial;
   margin: 0;
   background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
@@ -107,7 +101,7 @@ header.primary h1 a {
 }
 
 header.primary h2 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial;
   font-size: 2em;
   /* Shorhand Three Value Top, Left/Right, Bottom*/
   margin: 20px auto 40px;
@@ -160,7 +154,7 @@ section#content {
 }
 
 section#content h2{
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', arial;
   font-size: 4.4em;
   color: rgba(80, 93, 150, 1);
  text-align:center;
@@ -315,6 +309,25 @@ aside article footer {
   display: none;
 }
 
+.gallery {
+	background-color: #212225;
+	width: 50em;
+  height: 30em;
+	margin: auto;
+	margin-bottom: 20px;
+	border: 1px solid #999;
+	overflow: hidden; 
+	border-radius: 6px;
+}
+.gallery img {
+  display: block;
+  position: center;
+  margin: 0px 0px;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
 /*FAQS*/
 p.accordion {
     background-color: #6b6666;
@@ -349,6 +362,7 @@ p.accordion.active:after {
 div.panel {
   font-size: 1.5em;
     margin: 0em 1.5em 1.5em 1.5em;
+    padding: 10px;
     background-color:#b2a9a9; 
     max-height: 0;
     overflow: hidden;
